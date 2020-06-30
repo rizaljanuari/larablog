@@ -11,13 +11,13 @@
 <body>
     <h1>Buat Account Baru</h1>
     <h3>Sign Up Form</h3>
-    <form action="/welcome">
-
+    <form action="/welcome" method="POST">
+        @csrf
         <label for="fName">First Name :</label> <br>
-        <input type="text"><br><br>
+        <input type="text" name="f_name"><br><br>
 
-        <label for="fName">Last Name :</label><br>
-        <input type="text"><br><br>
+        <label for="lName">Last Name :</label><br>
+        <input type="text" name="l_name"><br><br>
 
         <Label>Gender : </Label><br>
         <input type="radio" id="male" name="gender" value="male">
